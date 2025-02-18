@@ -420,8 +420,13 @@ public class PnQuanLyNguoiDungGUI extends javax.swing.JPanel {
                 frame.pack();
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.setLocationRelativeTo(null);
-                 frame.setVisible(true);
-                loadDataLenBangNguoiDung();
+                frame.setVisible(true);
+                frame.addWindowListener(new java.awt.event.WindowAdapter() {
+                    @Override
+                    public void windowClosed(java.awt.event.WindowEvent windowEvent) {
+                        loadDataLenBangNguoiDung();
+                    }
+                });
             } else {
                 JOptionPane.showMessageDialog(this, "Không tìm thấy thông tin người dùng.", "Lỗi", JOptionPane.ERROR_MESSAGE);
             }
