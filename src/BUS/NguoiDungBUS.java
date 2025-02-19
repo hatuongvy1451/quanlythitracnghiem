@@ -38,9 +38,11 @@ public class NguoiDungBUS {
         NguoiDungBUS nguoiDungBUS = new NguoiDungBUS();
         for (NguoiDungDTO users : listnd) {
             String tenDangNhap = users.getTenDN().toLowerCase();
+            String vaiTro = (users.getVaiTro().equals("1")) ? "Admin" : "User";
             if (tenDangNhap.contains(tenDN.toLowerCase()) || (users.getMaND() + "").contains(tenDN)
+                    || (users.getHoTen().toLowerCase().contains(tenDN.toLowerCase()))
                     || (users.getEmail().toLowerCase().contains(tenDN.toLowerCase()))
-                    || (users.getVaiTro().toLowerCase().contains(tenDN.toLowerCase()))) {
+                    || (vaiTro.toLowerCase().contains(tenDN.toLowerCase()))) {
                 dsusers.add(users);
             }
         }
