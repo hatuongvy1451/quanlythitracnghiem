@@ -324,7 +324,7 @@ public class SuaNguoiDungGUI extends javax.swing.JPanel {
     private javax.swing.JTextField txtTenDN;
     // End of variables declaration//GEN-END:variables
 
-    private void controls(){
+    public void controls(){
         btnSuaND.setCursor(new Cursor(Cursor.HAND_CURSOR));
     }
 }
