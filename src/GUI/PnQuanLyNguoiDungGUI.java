@@ -228,7 +228,7 @@ public class PnQuanLyNguoiDungGUI extends javax.swing.JPanel {
         tblND.setFocusable(false);
         tblND.setIntercellSpacing(new Dimension(0, 0));
         tblND.getTableHeader().setFont(font);
-        tblND.setRowHeight(30);
+        tblND.setRowHeight(40);
         tblND.setShowVerticalLines(false);
         tblND.getTableHeader().setOpaque(false);
         tblND.setFillsViewportHeight(true);
