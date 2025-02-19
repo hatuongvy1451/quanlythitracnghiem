@@ -50,7 +50,7 @@ public class PnQuanLyNguoiDungGUI extends javax.swing.JPanel {
     public PnQuanLyNguoiDungGUI() {
         initComponents();
         addPlaceholder(txtTimKiemND, "Tìm kiếm người dùng...");
-        control();
+        controls();
         events();
     }
 
@@ -212,7 +212,7 @@ public class PnQuanLyNguoiDungGUI extends javax.swing.JPanel {
     private javax.swing.JTextField txtTimKiemND;
     // End of variables declaration//GEN-END:variables
     
-    public void control() {
+    public void controls() {
         modelNguoiDung = new DefaultTableModel();
         // Thêm các cột vào model
         modelNguoiDung.addColumn("Mã người dùng");
