@@ -138,7 +138,7 @@ CREATE TABLE `topics` (
 CREATE TABLE `users` (
   `userID` int(11) NOT NULL,
   `userName` varchar(40) NOT NULL COMMENT 'login = userName',
-  `userEmail` varchar(20) NOT NULL,
+  `userEmail` varchar(50) NOT NULL,
   `userPassword` varchar(40) NOT NULL COMMENT 'mã hóa dùng md5',
   `userFullName` varchar(40) NOT NULL,
   `isAdmin` tinyint(4) NOT NULL COMMENT '1: admin; 0: user'
