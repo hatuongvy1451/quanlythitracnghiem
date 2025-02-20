@@ -784,7 +784,7 @@ INSERT INTO `topics` (`tpID`, `tpTitle`, `tpParent`, `tpStatus`) VALUES
 CREATE TABLE `users` (
   `userID` int(11) NOT NULL,
   `userName` varchar(40) NOT NULL,
-  `userEmail` varchar(20) NOT NULL,
+  `userEmail` varchar(50) NOT NULL,
   `userPassword` varchar(40) NOT NULL,
   `userFullName` varchar(40) NOT NULL,
   `isAdmin` tinyint(4) NOT NULL
