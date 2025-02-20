@@ -572,21 +572,21 @@ CREATE TABLE `logs` (
   `logID` int(11) NOT NULL,
   `logContent` text NOT NULL,
   `logUserID` int(11) NOT NULL,
-  `logExID` int(11) NOT NULL,
+  `logExCode` varchar(20) NOT NULL,
   `logDate` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `logs` (`logID`, `logContent`, `logUserID`, `logExID`, `logDate`) VALUES
-(1, 'Đăng nhập để làm bài kiểm tra', 2, 1, '2025-01-21 10:00:00'),
-(2, 'Bắt đầu bài kiểm tra EX001', 2, 1, '2025-01-21 10:05:00'),
-(3, 'Nộp bài cho EX001', 2, 1, '2025-01-21 10:30:00'),
-(4, 'Đăng nhập để làm bài kiểm tra', 3, 2, '2025-01-21 10:30:00'),
-(5, 'Bắt đầu bài kiểm tra EX002', 3, 2, '2025-01-21 10:35:00'),
-(6, 'Nộp bài cho EX002', 3, 2, '2025-01-21 11:00:00'),
-(7, 'Đăng nhập để làm bài kiểm tra', 4, 3, '2025-01-22 11:00:00'),
-(8, 'Bắt đầu bài kiểm tra EX003', 4, 3, '2025-01-22 11:05:00'),
-(9, 'Nộp bài cho EX003', 4, 3, '2025-01-22 11:30:00'),
-(10, 'Đăng nhập để làm bài kiểm tra', 5, 4, '2025-01-22 11:30:00');
+INSERT INTO `logs` (`logID`, `logContent`, `logUserID`, `logExCode`, `logDate`) VALUES
+(1, 'Đăng nhập để làm bài kiểm tra', 2, 'EX001', '2025-01-21 10:00:00'),
+(2, 'Bắt đầu bài kiểm tra EX001', 2, 'EX001', '2025-01-21 10:05:00'),
+(3, 'Nộp bài cho EX001', 2, 'EX001', '2025-01-21 10:30:00'),
+(4, 'Đăng nhập để làm bài kiểm tra', 3, 'EX002', '2025-01-21 10:30:00'),
+(5, 'Bắt đầu bài kiểm tra EX002', 3, 'EX002', '2025-01-21 10:35:00'),
+(6, 'Nộp bài cho EX002', 3, 'EX002', '2025-01-21 11:00:00'),
+(7, 'Đăng nhập để làm bài kiểm tra', 4, 'EX003', '2025-01-22 11:00:00'),
+(8, 'Bắt đầu bài kiểm tra EX003', 4, 'EX003', '2025-01-22 11:05:00'),
+(9, 'Nộp bài cho EX003', 4, 'EX003', '2025-01-22 11:30:00'),
+(10, 'Đăng nhập để làm bài kiểm tra', 5, 'EX004', '2025-01-22 11:30:00');
 
 -- --------------------------------------------------------
 
